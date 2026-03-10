@@ -1,8 +1,19 @@
 //import react from 'react';
 import india from '../assets/india.jpg'
 import '../App.css'
+import { useNavigate } from 'react-router-dom'
 
 const LandingPage = () => {
+    const navigate = useNavigate();
+
+    const handleCitizenClick = () => {
+        navigate('/login', { state: { type: 'citizen' } });
+    };
+
+    const handleAdminClick = () => {
+        navigate('/login', { state: { type: 'admin' } });
+    };
+
     return (
         <div className="landing-page">
             <div className="background-image" style={{ backgroundImage: `url(${india})` }}></div>
@@ -15,11 +26,11 @@ const LandingPage = () => {
                 <div className="avatars">
                     <div className="avatar">
                         <img src="https://via.placeholder.com/100" alt="Citizen" />
-                        <button>Citizen</button>
+                        <button onClick={handleCitizenClick}>Citizen</button>
                     </div>
                     <div className="avatar">
                         <img src="https://via.placeholder.com/100" alt="Admin" />
-                        <button>Admin</button>
+                        <button onClick={handleAdminClick}>Admin</button>
                     </div>
 
                 </div>
