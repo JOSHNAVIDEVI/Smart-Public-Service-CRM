@@ -5,7 +5,7 @@ const Login = () => {
     const type = location.state?.type || 'citizen'; // Default to citizen if no state
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-blue-50">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-blue-100">
             <div className="w-full max-w-md p-8 bg-white rounded-xl shadow-md flex flex-col items-center">
                 <a href="/" className="self-start text-sm text-gray-500 mb-6 hover:underline">&larr; Back to home</a>
                 <div className="flex flex-col items-center mb-6">
