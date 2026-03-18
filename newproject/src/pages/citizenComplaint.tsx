@@ -166,7 +166,7 @@ const CitizenComplaint = () => {
               className="hidden"
               onChange={handlePhotoChange}
             />
-            {photoName ? photoName : 'Click to upload photo'}
+            {photoName ? photoName : '+ Click to upload photo'}
           </label>
         </div>
         <button

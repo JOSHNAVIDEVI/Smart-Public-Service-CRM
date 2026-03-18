@@ -8,7 +8,7 @@ const Login = () => {
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-blue-100">
-            <div className="w-full max-w-md p-8 bg-white rounded-xl shadow-md flex flex-col items-center">
+            <div className="w-full max-w-md p-8 bg-white rounded-xl shadow-md flex flex-col items-center m-2">
                 <a href="/" className="self-start text-sm text-gray-500 mb-6 hover:underline">&larr; Back to home</a>
                 
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
